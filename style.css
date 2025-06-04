@@ -1,0 +1,49 @@
+
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: #2e3b4e;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.grid-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.grid-item h2 {
+  color: #004080;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.grid-item ul {
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 50px;
+  color: #777;
+}
