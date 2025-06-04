@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course Syllabus - Richa's Education Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      color: #2e3b4e;
+    }
+    section {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #004080;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 50px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Course Syllabus</h1>
+  <p>Welcome to Richa's Education Portal</p>
+</header>
+
+<section>
+  <h2>📘 Semester 1: Basic Electronics</h2>
+  <ul>
+    <li>Introduction to Electronics</li>
+    <li>Semiconductors & Diodes</li>
+    <li>Transistors and Amplifiers</li>
+    <li>Digital Logic Basics</li>
+    <li>Lab Experiments & Assignments</li>
+  </ul>
+</section>
+
+<section>
+  <h2>💻 Semester 2: Programming in C</h2>
+  <ul>
+    <li>Variables, Data Types, Operators</li>
+    <li>Control Structures (if, loops)</li>
+    <li>Functions and Recursion</li>
+    <li>Arrays and Strings</li>
+    <li>Structures and File Handling</li>
+  </ul>
+</section>
+
+<section>
+  <h2>📡 Semester 3: Communication Systems</h2>
+  <ul>
+    <li>Analog Modulation Techniques</li>
+    <li>Digital Modulation Techniques</li>
+    <li>Transmission Media</li>
+    <li>Noise and Signal-to-Noise Ratio</li>
+    <li>MATLAB Simulations</li>
+  </ul>
+</section>
+
+<footer>
+  &copy; 2025 Richa's Education Hub | Contact: your-email@example.com
+</footer>
+
+</body>
+</html>
