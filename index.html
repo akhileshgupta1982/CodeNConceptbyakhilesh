@@ -1,131 +1,122 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Course Syllabus - Akhilesh's Education Hub</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-<header>
-  <h1>Course Syllabus</h1>
-  <p>Welcome to Akhilesh's Education Portal</p>
-</header>
-
-<div class="grid-container">
-<div class="grid-item">
-<h2>📘 My Introduction</h2>
-<head>
-  <title>Photo and Info Side by Side</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Akhilesh Kumar Gupta | Assistant Professor</title>
   <style>
-    .container {
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    .main-container {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      flex-direction: row;
+      max-width: 1200px;
+      margin: 40px auto;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .sidebar {
+      width: 30%;
       padding: 20px;
+      background-color: #fff;
+      border-right: 1px solid #e0e0e0;
+      text-align: center;
     }
 
-    .photo {
-      flex: 1;
-      padding: 10px;
+    .sidebar img {
+      width: 100%;
+      border-radius: 10px;
     }
 
-    .info {
-      flex: 2;
-      padding: 10px;
+    .sidebar h3 {
+      margin-top: 20px;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
+    .content {
+      width: 70%;
+      padding: 30px;
     }
 
-    .info p {
-      font-size: 18px;
-      line-height: 1.5;
+    .header {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .sub-header {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #003366;
+      padding-bottom: 5px;
+    }
+
+    nav a.active {
+      border-bottom: 2px solid #003366;
+      font-weight: bold;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      color: #003366;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="photo">
-      <img src="myphoto.jpg" alt="Profile Photo">
+<div class="main-container">
+  <div class="sidebar">
+    <img src="myphoto.jpg" alt="Dr. Shweta">
+    <h3>About Me</h3>
+    <p>Have Ph.D., doctoral thesis in Electrical Engineering. Includes <em>Optimization Techniques</em> in Spectrum Sensing for Cognitive Radio Networks and <em>Optimal Filter</em> Design for Noise Reduction.</p>
+  </div>
+
+  <div class="content">
+    <div class="header">Shweta</div>
+    <div class="sub-header">
+      Assistant Professor of Electrical Engineering | Expert in Communication Systems & MATLAB Simulink | IIC Convenor
     </div>
-    <div class="info">
-      <h2>Dr. Akhilesh Kumar Gupta</h2>
-      <p>Assistant Professor in Electrical Engineering<br>
-         Email: akhilesh@example.com<br>
-         Research Area: Smart Grid, Power Systems</p>
-    </div>
+
+    <nav>
+      <a href="#" class="active">About Me</a>
+      <a href="#">Research</a>
+      <a href="#">Publications</a>
+      <a href="#">Teaching</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <section>
+      <h2>About Me</h2>
+      <p>My research focuses on advanced DSP, digital electronics, and optimization approaches in communication systems. I am dedicated to cutting-edge research in these areas as well as cognitive radio networks during my PhD.</p>
+    </section>
+
   </div>
-
-</body>
-
-
-<img src="myphoto.jpg" alt="My Photo" width="300" style="border-radius: 10px;" />
-<div class="info">
-      <h2>Dr. Akhilesh Kumar Gupta</h2>
-      <p>Assistant Professor in Electrical Engineering<br>
-         Email: akhilesh@example.com<br>
-         Research Area: Smart Grid, Power Systems</p>
-    </div>
-      <ul>
-      <li>Dr. Akhilesh Kumar Gupta</li>
-      <li>Assistant Professor</li>
-      <li>Department of Electrical and Electronics Engineering</li>
-      <li>Shri Ramswaroop Memorial University, Lucknow</li>
- </div>
-  <div class="grid-item">
-    <h2>📘 My Introduction</h2>
-    <ul>
-      <li>Dr. Akhilesh Kumar Gupta</li>
-      <li>Assistant Professor</li>
-      <li>Department of Electrical and Electronics Engineering</li>
-      <li>Shri Ramswaroop Memorial University, Lucknow</li>
-<a href="Resume.pdf" target="_blank">My Profile</a>
-     </ul>
-  </div>
-
-  <div class="grid-item">
-    <h2>💻 My Research Work</h2>
-    <ul>
-      <li>Variables, Data Types, Operators</li>
-      <li>Control Structures (if, loops)</li>
-      <li>Functions and Recursion</li>
-      <li>Arrays and Strings</li>
-      <li>Structures and File Handling</li>
-    </ul>
-  </div>
-
-  <div class="grid-item">
-    <h2>📡 My Education</h2>
-    <ul>
-      <li>Analog Modulation Techniques</li>
-      <li>Digital Modulation Techniques</li>
-      <li>Transmission Media</li>
-      <li>Noise and Signal-to-Noise Ratio</li>
-      <li>MATLAB Simulations</li>
-    </ul>
-  </div>
-
-  <div class="grid-item">
-    <h2>📊 My Future</h2>
-    <ul>
-      <li>Continuous and Discrete-Time Signals</li>
-      <li>Fourier Series and Transforms</li>
-      <li>Laplace and Z-Transforms</li>
-      <li>System Analysis</li>
-      <li>MATLAB-Based Experiments</li>
-    </ul>
-  </div>
-
 </div>
-
-<footer>
-  &copy; 2025 Akhilesh's Education Hub | Contact: your-email@example.com
-</footer>
 
 </body>
 </html>
