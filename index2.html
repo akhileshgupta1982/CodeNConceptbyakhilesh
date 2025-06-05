@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Akhilesh Kumar Gupta | Assistant Professor</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: row;
+      max-width: 1200px;
+      margin: 40px auto;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .sidebar {
+      width: 30%;
+      padding: 20px;
+      background-color: #fff;
+      border-right: 1px solid #e0e0e0;
+      text-align: center;
+    }
+
+    .sidebar img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .sidebar h3 {
+      margin-top: 20px;
+    }
+
+    .content {
+      width: 70%;
+      padding: 30px;
+    }
+
+    .header {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .sub-header {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #003366;
+      padding-bottom: 5px;
+    }
+
+    nav a.active {
+      border-bottom: 2px solid #003366;
+      font-weight: bold;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      color: #003366;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+<div class="main-container">
+  <div class="sidebar">
+    <img src="myphoto.jpg" alt="Dr. Akhilesh Kumar Gupta">
+    <h3>About Me</h3>
+<p style="text-align: justify;">
+    Have Ph.D., doctoral thesis in Optimized Power Harvesting and Controller Design for Power Electronic Converters used in Wind Energy Conversion.</p>
+  </div>
+</div>
+  <div class="content">
+    <div class="header">Dr. Akhilesh Kumar Gupta</div>
+    <div class="sub-header">
+      Assistant Professor of Electrical and Electronics Engineering Department, SRMU Lucknow | Expert in Communication Systems & MATLAB Simulink | IIC Convenor
+    </div>
+
+    <nav>
+        <a href="#" onclick="showSection('about')">About Me</a>
+  	<a href="#" onclick="showSection('research')">Research</a>
+ 	<a href="#" onclick="showSection('publications')">Publications</a>
+  	<a href="#" onclick="showSection('teaching')">Teaching</a>
+  	<a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+
+<div id="about" class="section">
+  <h2>About Me</h2>
+  <p>My research focuses on advanced DSP, digital electronics, and optimization approaches in communication systems. I am dedicated to cutting-edge research in these areas as well as cognitive radio networks during my PhD.</p>
+</div>
+
+
+  <div id="research" class="section" style="display:none;">
+  <h2>Research</h2>
+  <p>Your research summary here.</p>
+</div>
+
+<div id="publications" class="section" style="display:none;">
+  <h2>Publications</h2>
+  <ul>
+    <li><strong>Shweta, A.</strong> (2024). Optimization Techniques in Spectrum Sensing for Cognitive Radio. <em>International Journal of Wireless Networks</em>, Vol. 18(2).</li>
+    <li><strong>Shweta, A.</strong> (2023). Adaptive Filtering for Noise Reduction in Smart Grids. <em>IEEE Transactions</em>.</li>
+  </ul>
+</div>
+
+<div id="teaching" class="section" style="display:none;">
+  <h2>Teaching</h2>
+  <p>Subjects you teach.</p>
+</div>
+
+<div id="contact" class="section" style="display:none;">
+  <h2>Contact</h2>
+  <p>Email: shweta@example.com</p>
+</div>
+
+</body>
+</html>
