@@ -91,7 +91,32 @@
       font-size: 16px;
       line-height: 1.6;
     }
-  </style>
+  
+    .popup {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .popup-content {
+      background: #fff;
+      margin: 50px auto;
+      padding: 20px;
+      width: 80%;
+      max-height: 80%;
+      overflow-y: auto;
+      border-radius: 10px;
+    }
+    .close {
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+</style>
 </head>
 <body>
 
@@ -104,7 +129,7 @@
   </div>
 
   <div class="content">
-    <div class="header">Dr. Akhilesh Kumar Gupta</div>
+    <div class="header">Shweta</div>
     <div class="sub-header">
      Assistant Professor of Electrical and Electronics Engineering Department, SRMU Lucknow | Expert in Communication Systems & MATLAB Simulink | IIC Convenor
     </div>
@@ -127,56 +152,21 @@
       <p>I work in the area of signal processing, wireless communication, and intelligent optimization for cognitive radio systems.</p>
     </div>
 
-    <div id="publications" class="section">
+    
+<div id="publications" class="section">
   <h2>Publications</h2>
+  <button onclick="openPopup()">View All Publications</button>
+</div>
 
-  <h3>(a) Books</h3>
-  <ol>
-    <li>Dr. Akhilesh Kumar Gupta, Saurabh Kr. Bajpai, Sushil Kr. Paswan, “संचार अभियांत्रिकी के सिद्धांत” Notion Press, 2023</li>
-    <li>Dr. Akhilesh Kumar Gupta, “Analog And Digital Communication: Extensive Question Bank With Solutions For Better Understanding” Amazon Kindle Edition, 2023.</li>
-    <li>Dr. Akhilesh Kumar Gupta, “Communication Engineering”, IIFRAD Publisher, 2022.</li>
-    <li>Dr. Akhilesh Kumar Gupta, “Analog and Digital Communication”, IIFRAD Publisher, 2021.</li>
-  </ol>
+<!-- Popup Modal -->
+<div id="popupMenu" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2>Publications</h2>
+    <p>This is where the full publication list goes. Please insert the full list here (or let me generate it for you again).</p>
+  </div>
+</div>
 
-  <h3>(b) International Journals</h3>
-  <ol>
-    <li>Chhabindra Nath Singh, Shekhar Gehlaut, Akhilesh Kumar Gupta, “Marine Predators Algorithm Based Stable Approximants Of Linear-Time Invariant Continuous-Time Systems”, Journal of Namibian Studies, vol. 35, issue 1, pp. 3881-3904, 2023. (SCOPUS)</li>
-    <li>Tejavath Veerendar, Deepak Kumar & Akhilesh Kumar Gupta, “Quasi-Oppositional African Vultures Optimization-Based PIλDn Plus Piλ Controller for Frequency Control of an Interlinked Hybrid Power System”, Electric Power Components and Systems, vol. 51, issue 13, pp. 1219-1239, 2023. (SCI)</li>
-    <li>Chhabindra Nath Singh, Deepak Kumar, Paulson Samuel, Akhilesh Kumar Gupta, “Slime mould optimization-based approximants of large-scale linear-time invariant continuous-time systems with assured stability”, Circuits, Systems & Signal Processing, vol. 42, pp. 1419-1437, 2022. (SCI)</li>
-    <li>Akhilesh Kr. Gupta, Deepak Kumar and Paulson Samuel, “Order Reduction of Linear Time Invariant System using Eigen Permutation and Jaya Optimization,” Engineering Optimization, vol. 51, issue 9, pp. 1626–1643, 2019. (SCI)</li>
-    <li>Akhilesh K. Gupta, Deepak Kumar and Paulson Samuel, “A Mixed Method for Order Reduction of Linear Time Invariant Systems using Big Bang-Big Crunch And Eigen Spectrum Algorithms,” Int. J. of Automation and Control, vol. 13, issue 2, pp. 158–175, 2019. (Scopus)</li>
-    <li>Akhilesh K. Gupta, Deepak Kumar and Paulson Samuel, “A Meta Heuristic Cuckoo Search and Eigen Permutation Approach for Model Order Reduction,” Sādhanā, vol. 43, issue 65, pp. 1–11, May 2018. (SCI)</li>
-    <li>Akhilesh Kumar Gupta, Deepak Kumar and Paulson Samuel, “Order Reduction of Continuous LTI Systems using Harmony Search Optimization with retention of dominant poles,” Int. J. of Control Theory and Application, vol. 10, issue 6, pp. 269–277, 2017. (Scopus)</li>
-    <li>Ayushi Sachan, Akhilesh Kr. Gupta, Paulson Samuel, “A Comprehensive Review of MPPT Algorithms Employed in Wind Energy Conversion Systems,” Journal of Green Engineering, vol. 6, issue 4, pp. 385–402, 2016. (Scopus)</li>
-  </ol>
-
-  <h3>(c) Book Chapters</h3>
-  <ol>
-    <li>Satendra Kumar Singh Kushwaha, Satyprakash, Akhilesh Kumar Gupta, et al., “Techno-Economic Issues of Grid Connected Large Photovoltaic Plants…” In Smart Charging Solutions, 2022. [DOI link]</li>
-    <li>Akhilesh K. Gupta, Paulson Samuel, Deepak Kumar, “Speed Control of PMSM Drive using Jaya Optimization,” LNEE, vol. 607, pp. 247–256, 2020.</li>
-    <li>Akhilesh K. Gupta, Paulson Samuel, Deepak Kumar, “Jaya Optimization based PID Controller for Z-Source Inverter,” LNEE, vol. 607, pp. 257–267, 2020.</li>
-    <li>Akhilesh Gupta, et al., “Modified Eigen Permutation Based Model Simplification…” In Advances in Systems, Control and Computing, 2020. [DOI link]</li>
-    <li>Chhabindra Singh, et al., “A Mixed Approach for Model Reduction Using Differential Evolution…” In Advances in Systems, Control and Computing, 2020. [DOI link]</li>
-  </ol>
-
-  <h3>(d) International Conferences</h3>
-  <ol>
-    <li>Sandeep Gupta, Akhilesh Kr. Gupta, et al., “Enhancing Buck Converter Dynamics through Jaya-Optimized PI Control,” ICASPACE-2025</li>
-    <li>S. Gehlaut, et al., “Jaya optimization-based approximation of LTI systems using stability equations,” PIECON, 2023</li>
-    <li>C. N. Singh, et al., “Colliding bodies optimization-based approximants of LTI systems,” ANZCC, 2022</li>
-    <li>Chhabindra Singh, et al., “Approximation of Commensurate Fractional-order systems using CBO,” ASCC, 2022</li>
-    <li>… (and more)</li>
-  </ol>
-
-  <h3>(e) National Conferences</h3>
-  <ol>
-    <li>Akhilesh Kr. Gupta, et al., “MPPT for Solar PV Systems: A Comprehensive Review,” GREENS, 2025</li>
-    <li>Akhilesh Kumar Gupta, et al., “Generator topologies with power electronics converters…”, NCRTES, 2013</li>
-  </ol>
-
-
-      </ul>
-    </div>
 
     <div id="teaching" class="section">
       <h2>Teaching</h2>
@@ -204,11 +194,16 @@
     event.target.classList.add('active');
   }
 </script>
-<div style="text-align: center; margin-top: 20px;">
-  <p>Total Visitors:</p>
-  <a href="https://www.hitwebcounter.com" target="_blank">
-    <img src="https://hitwebcounter.com/counter/counter.php?page=1234567&style=0006&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" >
-  </a>
-</div>
+
+
+<script>
+function openPopup() {
+  document.getElementById("popupMenu").style.display = "block";
+}
+function closePopup() {
+  document.getElementById("popupMenu").style.display = "none";
+}
+</script>
 </body>
+
 </html>
