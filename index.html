@@ -5,40 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Code & Concept by Dr. Akhilesh Gupta</title>
   <link rel="icon" href="logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Rubik', sans-serif;
       color: #222;
-      background-color: #f8f9fa;
+      background-color: #f4f6f9;
     }
     header {
       background: linear-gradient(to right, #003366, #005f99);
       color: white;
-      padding: 40px 20px;
+      padding: 50px 20px;
       text-align: center;
     }
     header img {
-      width: 120px;
+      width: 130px;
       border-radius: 50%;
       margin-bottom: 10px;
+      box-shadow: 0 0 12px rgba(255,255,255,0.5);
     }
     h1 {
       margin: 10px 0 5px;
-      font-size: 32px;
+      font-size: 36px;
     }
     h2 {
-      font-size: 26px;
+      font-size: 28px;
       margin-top: 40px;
+      color: #003366;
     }
     .section {
-      padding: 30px 20px;
-      max-width: 900px;
+      padding: 40px 20px;
+      max-width: 950px;
       margin: auto;
       background: white;
-      margin-bottom: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
+      border-radius: 14px;
+      box-shadow: 0 0 16px rgba(0,0,0,0.06);
     }
     .cta-button {
       display: inline-block;
@@ -48,6 +52,11 @@
       margin-top: 15px;
       border-radius: 6px;
       text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .cta-button:hover {
+      background: #005a43;
+      transform: translateY(-2px);
     }
     .cards {
       display: flex;
@@ -58,9 +67,9 @@
     .card {
       background: #f0f8ff;
       border-radius: 10px;
-      flex: 1 1 260px;
+      flex: 1 1 280px;
       padding: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     footer {
       background: #003366;
@@ -73,69 +82,78 @@
       color: #005f99;
     }
     @media (max-width: 600px) {
-      h1 { font-size: 24px; }
+      h1 { font-size: 26px; }
+      .cards { flex-direction: column; }
     }
   </style>
 </head>
 <body>
 
-<header>
+<header data-aos="fade-down">
   <img src="logo.png" alt="Logo" />
   <h1>Dr. Akhilesh K. Gupta</h1>
   <p>Professor, Researcher, and Mentor | Empowering Engineers</p>
 </header>
 
-<section class="section">
+<section class="section" data-aos="fade-up">
   <h2>About Me</h2>
   <p>
-    I am Dr. Akhilesh K. Gupta, a dedicated academician and researcher with over two decades of teaching experience in Electrical and Electronics Engineering. 
+    I am Dr. Akhilesh K. Gupta, a dedicated academician and researcher with over two decades of teaching experience in Electrical and Electronics Engineering.
     My mission is to guide B.Tech students with structured course content, insightful publications, and applied research methodology.
   </p>
-  <a class="cta-button" href="profile.pdf" target="_blank">Download Full Profile (PDF)</a>
+  <a class="cta-button" href="profile.pdf" target="_blank" rel="noopener noreferrer">Download Full Profile (PDF)</a>
 </section>
 
-<section class="section">
+<section class="section" data-aos="fade-up">
   <h2>Sample Course Notes</h2>
   <p>
     High-quality notes tailored for undergraduate engineering students. Ideal for semester exams, GATE prep, and concept clarity.
   </p>
- <div class="cards">
+  <div class="cards">
     <div class="card">
-      <h3>संचार अभियांत्रिकी के सिद्धांत (PDF Sample Notes)</h3>  
-<a class="cta-button" href="AM.pdf" target="_blank">संचार अभियांत्रिकी के सिद्धांत</a>
-</div>
-</div>
+      <h3>संचार अभियांत्रिकी के सिद्धांत (PDF Sample Notes)</h3>
+      <a class="cta-button" href="AM.pdf" target="_blank" rel="noopener noreferrer">View Sample Notes</a>
+    </div>
+  </div>
 </section>
 
-<section class="section">
+<section class="section" data-aos="fade-up">
   <h2>Premium Study Material</h2>
   <div class="cards">
     <div class="card">
       <h3>Communication Engineering</h3>
       <p>Well-structured theory and solved examples</p>
       <p><strong>Price:</strong> ₹350</p>
-      <a class="cta-button" href="https://www.iifard.org/web/BGNdPwZv/Books">Buy Now on iffard</a>
+      <a class="cta-button" href="https://www.iifard.org/web/BGNdPwZv/Books" target="_blank" rel="noopener noreferrer">Buy on IIFARD</a>
     </div>
     <div class="card">
       <h3>संचार अभियांत्रिकी के सिद्धांत</h3>
-      <p>महत्त्वपूर्ण मूल अवधारणाएँ</p>
-      <p><strong>For Diploma EC 3rd Semester</strong></p>
-      <a class="cta-button" href="https://notionpress.com/in/read/principle-of-communication-engineering/">Buy on Notion Press</a>
-<a class="cta-button" href="https://www.amazon.in/dp/B0CR45V7RX">Buy on Amazon</a>
-<a class="cta-button" href="https://www.flipkart.com/principle-communication-engineering/p/itmfd3ea739852c8?pid=9798892332231&affid=editornoti">Buy on Flipkart</a>
+      <p>महत्त्वपूर्ण मूल अवधारणाएँ<br><strong>For Diploma EC 3rd Semester</strong></p>
+      <a class="cta-button" href="https://notionpress.com/in/read/principle-of-communication-engineering/" target="_blank" rel="noopener noreferrer">Buy on Notion Press</a><br>
+      <a class="cta-button" href="https://www.amazon.in/dp/B0CR45V7RX" target="_blank" rel="noopener noreferrer">Buy on Amazon</a><br>
+      <a class="cta-button" href="https://www.flipkart.com/principle-communication-engineering/p/itmfd3ea739852c8?pid=9798892332231&affid=editornoti" target="_blank" rel="noopener noreferrer">Buy on Flipkart</a>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" data-aos="fade-up">
+  <h2>Blog & Updates</h2>
+  <p>Coming Soon: Articles, tutorials, and student success stories.</p>
+</section>
+
+<section class="section" data-aos="fade-up">
   <h2>Connect With Me</h2>
   <p>Email: <a href="mailto:richesh27@gmail.com">richesh27@gmail.com</a></p>
-  <p>GitHub: <a href="https://akhileshgupta1982.github.io/CodeNConceptbyakhilesh" target="_blank">CodeNConceptbyakhilesh</a></p>
+  <p>GitHub: <a href="https://akhileshgupta1982.github.io/CodeNConceptbyakhilesh" target="_blank" rel="noopener noreferrer">CodeNConceptbyakhilesh</a></p>
 </section>
 
 <footer>
   &copy; 2025 Dr. Akhilesh K. Gupta | Designed for Education & Innovation
 </footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+</script>
 </body>
 </html>
