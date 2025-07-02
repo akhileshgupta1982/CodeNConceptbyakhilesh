@@ -2,187 +2,133 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Akhilesh Kumar Gupta | Assistant Professor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Code & Concept by Dr. Akhilesh Gupta</title>
   <link rel="icon" href="logo.png">
   <style>
     body {
-      font-family: "Segoe UI", sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #222;
       background-color: #f8f9fa;
-      color: #212529;
     }
-
-    .main-container {
-      display: flex;
-      flex-direction: row;
-      max-width: 1200px;
-      margin: 40px auto;
-      background: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .sidebar {
-      width: 30%;
-      padding: 20px;
-      background-color: #fff;
-      border-right: 1px solid #e0e0e0;
+    header {
+      background: linear-gradient(to right, #003366, #005f99);
+      color: white;
+      padding: 40px 20px;
       text-align: center;
     }
-
-    .sidebar img {
-      width: 100%;
-      border-radius: 10px;
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 10px;
     }
-
-    .sidebar h3 {
+    h1 {
+      margin: 10px 0 5px;
+      font-size: 32px;
+    }
+    h2 {
+      font-size: 26px;
+      margin-top: 40px;
+    }
+    .section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .cta-button {
+      display: inline-block;
+      background: #007b5e;
+      color: white;
+      padding: 12px 20px;
+      margin-top: 15px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
       margin-top: 20px;
     }
-
-    .content {
-      width: 70%;
-      padding: 30px;
+    .card {
+      background: #f0f8ff;
+      border-radius: 10px;
+      flex: 1 1 260px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-
-    .header {
-      font-size: 28px;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-
-    .sub-header {
-      font-size: 16px;
-      color: #666;
-      margin-bottom: 20px;
-    }
-
-    nav {
-      margin-bottom: 20px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    nav a {
-      margin-right: 20px;
-      text-decoration: none;
-      color: #003366;
-      padding-bottom: 5px;
-      cursor: pointer;
-      display: inline-block;
-      padding: 8px 10px;
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
       font-size: 14px;
     }
-
-    nav a.active {
-      border-bottom: 2px solid #003366;
-      font-weight: bold;
+    a {
+      color: #005f99;
     }
-
-    .section {
-      display: none;
-      text-align: justify;
-    }
-
-    .section.active {
-      display: block;
-    }
-
-    section h2 {
-      color: #003366;
-    }
-
-    .popup {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0; top: 0;
-      width: 100%; height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-    .popup-content {
-      background: #fff;
-      margin: 50px auto;
-      padding: 20px;
-      width: 80%;
-      max-height: 80%;
-      overflow-y: auto;
-      border-radius: 10px;
-    }
-    .close {
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-      cursor: pointer;
+    @media (max-width: 600px) {
+      h1 { font-size: 24px; }
     }
   </style>
 </head>
 <body>
-<div class="main-container">
-  <div class="sidebar">
-    <img src="logo.png" alt="Logo" style="width: 120px; border-radius: 50%; margin-bottom: 10px;">
-    <img src="myphoto.jpg" alt="Dr. Akhilesh Kumar Gupta" style="border-radius: 10px;">
-    <h3>About Me</h3>
-    <p>Ph.D. in Optimized Power Harvesting and Controller Design for Power Electronic Converters used in Wind Energy Conversion.</p>
-  </div>
-  <div class="content">
-    <div class="header">Dr. Akhilesh Kumar Gupta</div>
-    <div class="sub-header">Assistant Professor of Electrical and Electronics Engineering, SRMU Lucknow | Expert in Communication Systems & MATLAB Simulink | IIC Convenor</div>
 
-    <section style="background: #eef4ff; padding: 30px; border-radius: 10px; margin: 20px 0;">
-      <h2 style="margin-bottom: 10px; color: #003366;">Empowering B.Tech Students</h2>
-      <p style="font-size: 16px;">Explore curated notes, engineering concepts, and research-based resources to boost your academic success.</p>
-      <a href="#teaching" style="display: inline-block; margin-top: 15px; background: #003366; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Start Learning</a>
-    </section>
+<header>
+  <img src="logo.png" alt="Logo" />
+  <h1>Dr. Akhilesh K. Gupta</h1>
+  <p>Professor, Researcher, and Mentor | Empowering Engineers</p>
+</header>
 
-    <!-- NAVIGATION OMITTED FOR BREVITY: INCLUDE ORIGINAL NAV HERE -->
+<section class="section">
+  <h2>About Me</h2>
+  <p>
+    I am Dr. Akhilesh K. Gupta, a dedicated academician and researcher with over two decades of teaching experience in Electrical and Electronics Engineering. 
+    My mission is to guide B.Tech students with structured course content, insightful publications, and applied research methodology.
+  </p>
+  <a class="cta-button" href="profile.pdf" target="_blank">Download Full Profile (PDF)</a>
+</section>
 
-    <!-- EXISTING SECTIONS (About, Research, etc.) OMITTED FOR BREVITY: PASTE ORIGINAL -->
+<section class="section">
+  <h2>Sample Course Notes</h2>
+  <p>
+    High-quality notes tailored for undergraduate engineering students. Ideal for semester exams, GATE prep, and concept clarity.
+  </p>
+  <a class="cta-button" href="AM.pdf" target="_blank">View Sample Notes (Analog & Mixed Signal)</a>
+</section>
 
-    <div class="section" id="courses">
-      <h2>Courses & Books</h2>
-      <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-        <div style="flex: 1 1 300px; border: 1px solid #ccc; padding: 20px; border-radius: 10px;">
-          <h3>Data Structures Notes (PDF)</h3>
-          <p>₹149 | Concise & exam-focused material</p>
-          <a href="https://rzp.io/l/your-link" target="_blank" style="background: green; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Buy Now</a>
-        </div>
-        <div style="flex: 1 1 300px; border: 1px solid #ccc; padding: 20px; border-radius: 10px;">
-          <h3>Analog Communication Book</h3>
-          <p>₹199 | Kindle Edition</p>
-          <a href="https://www.amazon.in/yourbooklink" target="_blank" style="background: green; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Buy Now</a>
-        </div>
-      </div>
+<section class="section">
+  <h2>Premium Study Material</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Control Systems (PDF Notes)</h3>
+      <p>Well-structured theory and solved examples</p>
+      <p><strong>Price:</strong> ₹149</p>
+      <a class="cta-button" href="https://rzp.io/l/your-link">Buy Now</a>
+    </div>
+    <div class="card">
+      <h3>Communication Systems (Ebook)</h3>
+      <p>Digital & Analog principles with applications</p>
+      <p><strong>Price:</strong> ₹199</p>
+      <a class="cta-button" href="https://amazon.in/your-book-link">Buy on Amazon</a>
     </div>
   </div>
-</div>
+</section>
 
-<footer style="text-align:center; padding: 20px; background: #003366; color: white; margin-top: 40px;">
-  <p>&copy; 2025 Dr. Akhilesh Kumar Gupta | Teaching • Research • Innovation</p>
+<section class="section">
+  <h2>Connect With Me</h2>
+  <p>Email: <a href="mailto:akhileshkgupta1982@gmail.com">akhileshkgupta1982@gmail.com</a></p>
+  <p>GitHub: <a href="https://akhileshgupta1982.github.io/CodeNConceptbyakhilesh" target="_blank">CodeNConceptbyakhilesh</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Dr. Akhilesh K. Gupta | Designed for Education & Innovation
 </footer>
 
-<script>
-  function showSection(id) {
-    const sections = document.querySelectorAll('.section');
-    sections.forEach(sec => sec.classList.remove('active'));
-    const links = document.querySelectorAll('nav a');
-    links.forEach(link => link.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-    event.target.classList.add('active');
-  }
-  function openPopup() {
-    document.getElementById("popupMenu").style.display = "block";
-  }
-  function closePopup() {
-    document.getElementById("popupMenu").style.display = "none";
-  }
-  function scrollToId(id) {
-    setTimeout(() => {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 300);
-  }
-</script>
 </body>
 </html>
