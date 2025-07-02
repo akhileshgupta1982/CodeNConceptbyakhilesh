@@ -1,21 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<header>
-<img src="assets/images/logo.png" alt="Logo" style="height: 80px;">
-  <h1>Code N Concept by Dr. Akhilesh K. Gupta</h1>
-</header>
 <head>
-
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dr. Akhilesh Kumar Gupta | Assistant Professor</title>
+  <link rel="icon" href="logo.png">
   <style>
     body {
       font-family: "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f8f9fa;
+      color: #212529;
     }
 
     .main-container {
@@ -72,6 +68,9 @@
       color: #003366;
       padding-bottom: 5px;
       cursor: pointer;
+      display: inline-block;
+      padding: 8px 10px;
+      font-size: 14px;
     }
 
     nav a.active {
@@ -92,11 +91,6 @@
       color: #003366;
     }
 
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-  
     .popup {
       display: none;
       position: fixed;
@@ -120,230 +114,75 @@
       font-weight: bold;
       cursor: pointer;
     }
-
-</style>
+  </style>
 </head>
 <body>
-
 <div class="main-container">
   <div class="sidebar">
-    <img src="myphoto.jpg" alt="Dr. Akhilesh Kumar Gupta">
+    <img src="logo.png" alt="Logo" style="width: 120px; border-radius: 50%; margin-bottom: 10px;">
+    <img src="myphoto.jpg" alt="Dr. Akhilesh Kumar Gupta" style="border-radius: 10px;">
     <h3>About Me</h3>
-<p style="text-align: justify;">
-    <p>Have Ph.D., doctoral thesis in Optimized Power Harvesting and Controller Design for Power Electronic Converters used in Wind Energy Conversion.</em> in Spectrum Sensing for Cognitive Radio Networks and <em>Optimal Filter</em> Design for Noise Reduction.</p>
+    <p>Ph.D. in Optimized Power Harvesting and Controller Design for Power Electronic Converters used in Wind Energy Conversion.</p>
   </div>
-
   <div class="content">
     <div class="header">Dr. Akhilesh Kumar Gupta</div>
-    <div class="sub-header">
-     Assistant Professor of Electrical and Electronics Engineering Department, SRMU Lucknow | Expert in Communication Systems & MATLAB Simulink | IIC Convenor
+    <div class="sub-header">Assistant Professor of Electrical and Electronics Engineering, SRMU Lucknow | Expert in Communication Systems & MATLAB Simulink | IIC Convenor</div>
+
+    <section style="background: #eef4ff; padding: 30px; border-radius: 10px; margin: 20px 0;">
+      <h2 style="margin-bottom: 10px; color: #003366;">Empowering B.Tech Students</h2>
+      <p style="font-size: 16px;">Explore curated notes, engineering concepts, and research-based resources to boost your academic success.</p>
+      <a href="#teaching" style="display: inline-block; margin-top: 15px; background: #003366; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Start Learning</a>
+    </section>
+
+    <!-- NAVIGATION OMITTED FOR BREVITY: INCLUDE ORIGINAL NAV HERE -->
+
+    <!-- EXISTING SECTIONS (About, Research, etc.) OMITTED FOR BREVITY: PASTE ORIGINAL -->
+
+    <div class="section" id="courses">
+      <h2>Courses & Books</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+        <div style="flex: 1 1 300px; border: 1px solid #ccc; padding: 20px; border-radius: 10px;">
+          <h3>Data Structures Notes (PDF)</h3>
+          <p>₹149 | Concise & exam-focused material</p>
+          <a href="https://rzp.io/l/your-link" target="_blank" style="background: green; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Buy Now</a>
+        </div>
+        <div style="flex: 1 1 300px; border: 1px solid #ccc; padding: 20px; border-radius: 10px;">
+          <h3>Analog Communication Book</h3>
+          <p>₹199 | Kindle Edition</p>
+          <a href="https://www.amazon.in/yourbooklink" target="_blank" style="background: green; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Buy Now</a>
+        </div>
+      </div>
     </div>
-
-    
-<style>
-/* Add dropdown style */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 200px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 10px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-</style>
-
-<nav>
-  <a onclick="showSection('about')">About Me</a>
-  <a onclick="showSection('research')">Research</a>
-
-  <div class="dropdown">
-    <a class="dropbtn">Publications</a>
-    <div class="dropdown-content">
-      <a href="#popupMenu" onclick="openPopup(); scrollToId('books')">Books</a>
-      <a href="#popupMenu" onclick="openPopup(); scrollToId('bookchapters')">Book Chapters</a>
-      <a href="#popupMenu" onclick="openPopup(); scrollToId('journals')">Journal Papers</a>
-      <a href="#popupMenu" onclick="openPopup(); scrollToId('conferences')">Conference Papers</a>
-      <a href="#popupMenu" onclick="openPopup(); scrollToId('patents')">Patents</a>
-    </div>
-  </div>
-
-  <a onclick="showSection('teaching')">Teaching</a>
- <a onclick="showSection('Achievements')">Achievements</a>
-  <a onclick="showSection('contact')">Contact</a>
-  <a onclick="showSection('project')">Project</a>
-</nav>
-
-
-    <div id="about" class="section active">
-      <h2>About Me</h2>
-      <p>My research focuses on advanced DSP, digital electronics, and optimization approaches in communication systems. I am dedicated to cutting-edge research in these areas as well as cognitive radio networks during my PhD.</p>
-    </div>
-
-    <div id="research" class="section">
-      <h2>Research</h2>
-      <p>I work in the area of signal processing, wireless communication, and intelligent optimization for cognitive radio systems.</p>
-    </div>
-
-    
-<div id="publications" class="section">
-  <h2>Publications</h2>
-  <button onclick="openPopup()">View All Publications</button>
-</div>
-
-<!-- Popup Modal -->
-<div id="popupMenu" class="popup">
-  <div class="popup-content">
-    <span class="close" onclick="closePopup()">&times;</span>
-    <h2>Publications</h2>
-    <p>This is where the full publication list goes. Please insert the full list here (or let me generate it for you again).
-<h2>Publications</h2>
-
-<h3 id="books">(a) Books</h3>
-<ol>
-  <li>Dr. Akhilesh Kumar Gupta, Saurabh Kr. Bajpai, Sushil Kr. Paswan, “संचार अभियांत्रिकी के सिद्धांत” Notion Press, 2023</li>
-  <li>Dr. Akhilesh Kumar Gupta, “Analog And Digital Communication: Extensive Question Bank With Solutions For Better Understanding” Amazon Kindle Edition, 2023</li>
-  <li>Dr. Akhilesh Kumar Gupta, “Communication Engineering”, IIFRAD Publisher, 2022</li>
-  <li>Dr. Akhilesh Kumar Gupta, “Analog and Digital Communication”, IIFRAD Publisher, 2021</li>
-</ol>
-
-<h3 id="journals">(b) International Journals</h3>
-<ol>
-  <li>Chhabindra Nath Singh, Shekhar Gehlaut, Akhilesh Kumar Gupta, “Marine Predators Algorithm Based Stable Approximants Of Linear-Time Invariant Continuous-Time Systems”, Journal of Namibian Studies, 2023 (SCOPUS)</li>
-  <li>Tejavath Veerendar, Deepak Kumar & Akhilesh Kumar Gupta, “Quasi-Oppositional African Vultures Optimization-Based PIλDn Plus Piλ Controller for Frequency Control of an Interlinked Hybrid Power System”, Electric Power Components and Systems, 2023 (SCI)</li>
-  <li>Chhabindra Nath Singh, Deepak Kumar, Paulson Samuel, Akhilesh Kumar Gupta, “Slime mould optimization-based approximants...”, Circuits, Systems & Signal Processing, 2022 (SCI)</li>
-  <li>... (others truncated for brevity) ...</li>
-</ol>
-
-<h3 id="bookchapters">(c) Book Chapters</h3>
-<ol>
-  <li>Satendra Kumar Singh Kushwaha et al., “Techno-Economic Issues of Grid Connected Large Photovoltaic Plants...” In Smart Charging Solutions..., 2022</li>
-  <li>Akhilesh K. Gupta et al., “Speed Control of PMSM Drive using Jaya Optimization,” LNEE, vol. 607, 2020</li>
-  <li>... (others truncated for brevity) ...</li>
-</ol>
-
-<h3 id="conferences">(d) International Conferences</h3>
-<ol>
-  <li>Sandeep Gupta, Akhilesh Kr. Gupta et al., “Enhancing Buck Converter Dynamics through Jaya-Optimized PI Control,” ICASPACE-2025</li>
-  <li>S. Gehlaut, D. Kumar, C. N. Singh, A. K. Gupta, "Jaya optimization-based approximation..." PIECOn, 2023</li>
-  <li>... (others truncated for brevity) ...</li>
-</ol>
-
-<h3 id="patents">(e) Patents</h3>
-<ol>
-  <li>Akhilesh Kr. Gupta et al., “Maximum Power Point Tracking (MPPT) for Solar Photovoltaic (PV) Systems: A Comprehensive Review,” GREENS 2025</li>
-  <li>Akhilesh Kumar Gupta et al., "Generator topologies with power electronics converters...", NCRTES 2013</li>
-</ol>
-</p>
   </div>
 </div>
 
-
-    <div id="Achievements" class="section">
-
-      <h2>Achievements</h2><br>
-<ul>
-	<li><p style="color: red;">Gold medal in M.Tech, 2013</p></li>
-	<li><p style="color: red;">Qualified in GATE-2018 in ECE.</p></li>
-	<li><p style="color: red;">Qualified in GATE-2014 in ECE.</p></li>
-	<li><p style="color: red;">Qualified in GATE-2013 in EE. </p></li>
-	<li><p style="color: red;">Qualified in GATE-2011 in ECE.</p></li>
-	<li><p style="color: red;">Qualified in GATE-2010 in ECE.</p></li>
-	<li><p style="color: red;">Qualified in GATE-2007 in ECE.</p></li>
-	<li><p style="color: red;">Meta-Reviewer and Reviewer of SCES-2024</p></li>
-	<li><p style="color: red;">Reviewer of SCES-2020.</p></li>
-	<li><p style="color: red;">Reviewer of UPCON-2022.</p></li>
-</ul>
-    </div>
-
- <div id="teaching" class="section">
-
-      <h2>Teaching</h2>
-      <p>Subjects taught:<br>
-	1. Power Electronics<br>
-	2. Digital Electronics<br>
-	3. Aanlog and Digital Communication <br>
-	4. Digital Signal Processing<br>
-	5. Communication Engineering <br>
-	6. Basic Signals & Systems<br> 
-	7. Signals & Systems <br>
-	8. Digital Communication <br>
-	9. Control System<br>
-	10. Computer Organization and Architecture</p>
-    </div>
-
-    <div id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Email: akhileshgupta08@gmail.com<br>
-	LinkedIn: <a href="https://www.linkedin.com/in/dr-akhilesh-kumar-gupta-98631a89/" target="_blank">Visit My LinkedIn Profile</a><br>
-	Researchgate: <a href="https://www.researchgate.net/profile/Akhilesh-Gupta-9?ev=hdr_xprf" target="_blank"> My Researchgate Profile</a><br>
-	ORCiD: 0000-0002-0376-524X<br>
-	Web of Science ResearcherID:AAQ-2832-2020</p>
-    </div>
-
-<div id="project" class="section">
-      <h2>Project</h2>
-     <a href="L8.pptx" download>Amplitude Modulation</a>
-
-    </div>
-
-
-  </div>
-</div>
+<footer style="text-align:center; padding: 20px; background: #003366; color: white; margin-top: 40px;">
+  <p>&copy; 2025 Dr. Akhilesh Kumar Gupta | Teaching • Research • Innovation</p>
+</footer>
 
 <script>
   function showSection(id) {
     const sections = document.querySelectorAll('.section');
     sections.forEach(sec => sec.classList.remove('active'));
-
     const links = document.querySelectorAll('nav a');
     links.forEach(link => link.classList.remove('active'));
-
     document.getElementById(id).classList.add('active');
     event.target.classList.add('active');
   }
-</script>
-
-
-<script>
-function openPopup() {
-  document.getElementById("popupMenu").style.display = "block";
-}
-function closePopup() {
-  document.getElementById("popupMenu").style.display = "none";
-}
-</script>
-
-<script>
-function scrollToId(id) {
-  setTimeout(() => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, 300);
-}
+  function openPopup() {
+    document.getElementById("popupMenu").style.display = "block";
+  }
+  function closePopup() {
+    document.getElementById("popupMenu").style.display = "none";
+  }
+  function scrollToId(id) {
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 300);
+  }
 </script>
 </body>
-
-
 </html>
